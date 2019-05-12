@@ -1,6 +1,6 @@
 package common;
 
-import exception.ParamException;
+
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
@@ -35,7 +35,6 @@ public class SpringException implements HandlerExceptionResolver {
             JsonData result = JsonData.fail(defaultMsg);
             mv = new ModelAndView("jsonView", result.toMap());
         }
-
         return mv;
     }
 }

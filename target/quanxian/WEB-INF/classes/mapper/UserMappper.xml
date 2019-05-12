@@ -10,7 +10,19 @@
 
     </select>
     <select id="selectAll" resultType="model.User"  >
-        select * from user limit #{start},#{size};
+        select * from user order by  creattime desc limit #{start},#{size};
 
     </select>
+    <insert id="insertUserRole" parameterType="map">
+        insert into roleuser(uid,rid) values
+        <foreach collection="unAssign" item="roleId" separator=",">
+            (#{userId},#{roleId})
+        </foreach>
+    </insert>
+    <delete id="deleteUserRole" parameterType="map">
+        delete from roleuser  where uid=#{userId} and rid in
+        <foreach collection="assign"  item="roleId" open="(" close=")" separator=",">
+             #{roleId}
+        </foreach>
+    </delete>
 </mapper>

@@ -28,4 +28,32 @@ public class UserService {
     public int selectCount() {
         return userMapper.selectCount();
     }
+
+    public User selectUserByName(String username) {
+        return userMapper.selectByName(username);
+    }
+
+    public void insertUser(User user) {
+        userMapper.insert(user);
+    }
+
+    public User selectUserById(int parseInt) {
+        return userMapper.selectById(parseInt);
+    }
+
+    public void update(User user) {
+        userMapper.updateByPrimaryKey(user);
+    }
+
+    public void delete(int parseInt) {
+        userMapper.deleteByPrimaryKey(parseInt);
+    }
+
+    public void doUserRole(Map<String, Object> map) {
+        userMapper.insertUserRole(map);
+    }
+
+    public void deleteUserRole(Map<String, Object> map) {
+        userMapper.deleteUserRole(map);
+    }
 }

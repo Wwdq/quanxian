@@ -10,6 +10,7 @@ public class User {
     private String username;
 
     private String telephone;
+    private  String creattime;
 
     private String password;
 
@@ -17,13 +18,9 @@ public class User {
 
     private Integer status;
 
-    private String remark;
 
-    private String operator;
 
-    private Date operatorTime;
 
-    private String operatorIp;
 
     public Integer getId() {
         return id;
@@ -73,35 +70,13 @@ public class User {
         this.status = status;
     }
 
-    public String getRemark() {
-        return remark;
+
+
+    public String getCreattime() {
+        return creattime;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
-    }
-
-    public String getOperator() {
-        return operator;
-    }
-
-    public void setOperator(String operator) {
-        this.operator = operator == null ? null : operator.trim();
-    }
-
-    public Date getOperatorTime() {
-        return operatorTime;
-    }
-
-    public void setOperatorTime(Date operatorTime) {
-        this.operatorTime = operatorTime;
-    }
-
-    public String getOperatorIp() {
-        return operatorIp;
-    }
-
-    public void setOperatorIp(String operatorIp) {
-        this.operatorIp = operatorIp == null ? null : operatorIp.trim();
+    public void setCreattime(String creattime) {
+        this.creattime = creattime;
     }
 }

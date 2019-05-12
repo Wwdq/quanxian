@@ -1,7 +1,9 @@
 package model;
 
-import java.util.Date;
+import lombok.ToString;
 
+import java.util.Date;
+@ToString
 public class Role {
     private Integer id;
 
@@ -9,15 +11,7 @@ public class Role {
 
     private Integer status;
 
-    private Integer type;
-
-    private String remark;
-
-    private String operator;
-
-    private Date operatorTime;
-
-    private String operatorIp;
+    private  String createtime;
 
     public Integer getId() {
         return id;
@@ -43,43 +37,12 @@ public class Role {
         this.status = status;
     }
 
-    public Integer getType() {
-        return type;
+
+    public String getCreatetime() {
+        return createtime;
     }
 
-    public void setType(Integer type) {
-        this.type = type;
-    }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
-    }
-
-    public String getOperator() {
-        return operator;
-    }
-
-    public void setOperator(String operator) {
-        this.operator = operator == null ? null : operator.trim();
-    }
-
-    public Date getOperatorTime() {
-        return operatorTime;
-    }
-
-    public void setOperatorTime(Date operatorTime) {
-        this.operatorTime = operatorTime;
-    }
-
-    public String getOperatorIp() {
-        return operatorIp;
-    }
-
-    public void setOperatorIp(String operatorIp) {
-        this.operatorIp = operatorIp == null ? null : operatorIp.trim();
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime;
     }
 }
