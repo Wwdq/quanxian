@@ -49,4 +49,12 @@ public class RoleService {
     public List<Integer> selectByUserId(int userId) {
         return roleMapper.selectByUserID(userId);
     }
+
+    public void updateRolePower(Map<String, Object> map) {
+        roleMapper.insertRolePower(map);
+    }
+
+    public void deleteRolePower(Integer rid) {
+        roleMapper.deleteRolePower(rid);
+    }
 }

@@ -1,31 +1,27 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Power {
     private Integer id;
 
-    private String code;
 
     private String name;
 
-    private Integer listid;
+    private Integer pid;
 
     private String url;
+    private boolean open = true;
+    private  boolean checked=false;
+    private  String icon;
+
 
     private Integer status;
+    private List<Power> children=new ArrayList<>();
 
-    private Integer type;
 
-    private Integer seq;
-
-    private String remark;
-
-    private String operator;
-
-    private Date operatorTime;
-
-    private String operatorIp;
 
     public Integer getId() {
         return id;
@@ -35,13 +31,6 @@ public class Power {
         this.id = id;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code == null ? null : code.trim();
-    }
 
     public String getName() {
         return name;
@@ -51,13 +40,7 @@ public class Power {
         this.name = name == null ? null : name.trim();
     }
 
-    public Integer getListid() {
-        return listid;
-    }
 
-    public void setListid(Integer listid) {
-        this.listid = listid;
-    }
 
     public String getUrl() {
         return url;
@@ -75,51 +58,44 @@ public class Power {
         this.status = status;
     }
 
-    public Integer getType() {
-        return type;
+
+    public Integer getPid() {
+        return pid;
     }
 
-    public void setType(Integer type) {
-        this.type = type;
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 
-    public Integer getSeq() {
-        return seq;
+    public List<Power> getChildren() {
+        return children;
     }
 
-    public void setSeq(Integer seq) {
-        this.seq = seq;
+    public void setChildren(List<Power> children) {
+        this.children = children;
     }
 
-    public String getRemark() {
-        return remark;
+    public boolean isChecked() {
+        return checked;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
+    public void setChecked(boolean checked) {
+        this.checked = checked;
     }
 
-    public String getOperator() {
-        return operator;
+    public boolean isOpen() {
+        return open;
     }
 
-    public void setOperator(String operator) {
-        this.operator = operator == null ? null : operator.trim();
+    public void setOpen(boolean open) {
+        this.open = open;
     }
 
-    public Date getOperatorTime() {
-        return operatorTime;
+    public String getIcon() {
+        return icon;
     }
 
-    public void setOperatorTime(Date operatorTime) {
-        this.operatorTime = operatorTime;
-    }
-
-    public String getOperatorIp() {
-        return operatorIp;
-    }
-
-    public void setOperatorIp(String operatorIp) {
-        this.operatorIp = operatorIp == null ? null : operatorIp.trim();
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 }

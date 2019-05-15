@@ -2,6 +2,7 @@ package controller;
 
 import common.JsonData;
 import model.Role;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ import java.sql.Date;
 public class RoleController {
     @Autowired
     private RoleService roleService;
+    private Logger logger = Logger.getLogger(RoleController.class);
     @RequestMapping("/main")
     public String main(@RequestParam(defaultValue = "1") Integer pageNo, @RequestParam(defaultValue = "2") Integer pageSize, HttpServletRequest request){
         Map<String ,Integer> map=new HashMap<>();
@@ -76,5 +78,29 @@ public class RoleController {
         roleService.delete(Integer.parseInt(id));
         req.getRequestDispatcher("/role/main").forward(req, re);
         return ;
+    }
+    @RequestMapping("/assign")
+    public String toAssign(String id,HttpServletRequest req){
+        logger.debug("进入toAssign" + id );
+
+
+        Role role = roleService.selectById(Integer.parseInt(id));
+        req.setAttribute("role", role);
+        return "role/assign";
+    }
+    @RequestMapping("/doAssign")
+    @ResponseBody
+    public JsonData  doAssign(Integer rid,Integer [] pid){
+        Map<String ,Object> map=new HashMap<>();
+        map.put("rid", rid);
+        map.put("pid", pid);
+        try{
+            roleService.deleteRolePower(rid);
+            roleService.updateRolePower(map);
+        }catch (Exception e){
+            e.printStackTrace();
+            return JsonData.fail("失败");
+        }
+        return JsonData.success();
     }
 }

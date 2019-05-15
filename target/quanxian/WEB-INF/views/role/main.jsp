@@ -75,68 +75,7 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <div class="tree">
-                <ul style="padding-left:0px;" class="list-group">
-                    <li class="list-group-item tree-closed" >
-                        <a href="${PATH}/main"><i class="glyphicon glyphicon-dashboard"></i> 控制面板</a>
-                    </li>
-                    <li class="list-group-item">
-                        <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 权限管理 <span class="badge" style="float:right">3</span></span>
-                        <ul style="margin-top:10px;">
-                            <li style="height:30px;">
-                                <a href="${PATH}/user/main"  ><i class="glyphicon glyphicon-user"></i> 用户维护</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="${PATH}/role/main" style="color:red"><i class="glyphicon glyphicon-king"></i> 角色维护</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="permission.html"><i class="glyphicon glyphicon-lock"></i> 许可维护</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item tree-closed">
-                        <span><i class="glyphicon glyphicon-ok"></i> 业务审核 <span class="badge" style="float:right">3</span></span>
-                        <ul style="margin-top:10px;display:none;">
-                            <li style="height:30px;">
-                                <a href="auth_cert.html"><i class="glyphicon glyphicon-check"></i> 实名认证审核</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="auth_adv.html"><i class="glyphicon glyphicon-check"></i> 广告审核</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="auth_project.html"><i class="glyphicon glyphicon-check"></i> 项目审核</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item tree-closed">
-                        <span><i class="glyphicon glyphicon-th-large"></i> 业务管理 <span class="badge" style="float:right">7</span></span>
-                        <ul style="margin-top:10px;display:none;">
-                            <li style="height:30px;">
-                                <a href="cert.html"><i class="glyphicon glyphicon-picture"></i> 资质维护</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="type.html"><i class="glyphicon glyphicon-equalizer"></i> 分类管理</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="process.html"><i class="glyphicon glyphicon-random"></i> 流程管理</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="advertisement.html"><i class="glyphicon glyphicon-hdd"></i> 广告管理</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="message.html"><i class="glyphicon glyphicon-comment"></i> 消息模板</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="project_type.html"><i class="glyphicon glyphicon-list"></i> 项目分类</a>
-                            </li>
-                            <li style="height:30px;">
-                                <a href="tag.html"><i class="glyphicon glyphicon-tags"></i> 项目标签</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item tree-closed" >
-                        <a href="param.html"><i class="glyphicon glyphicon-list-alt"></i> 参数管理</a>
-                    </li>
-                </ul>
+                <jsp:include page="/WEB-INF/views/user/common.jsp"/>
             </div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -163,9 +102,8 @@
                             <tr >
                                 <th width="30">#</th>
                                 <th width="30"><input type="checkbox"></th>
-                                <th>账号</th>
-                                <th>密码</th>
-                                <th>手机号</th>
+                                <th>角色名</th>
+
                                 <th width="100">操作</th>
                             </tr>
                             </thead>
@@ -175,10 +113,9 @@
                                     <td>${id.count}</td>
                                     <td><input type="checkbox"></td>
                                     <td>${role.name}</td>
-                                    <td>${role.name}</td>
-                                    <td>${role.name}</td>
+
                                     <td>
-                                        <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
+                                        <button type="button" onclick="toAssign(${role.id})" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>
                                         <button type="button"  onclick="update(${role.id})" class="btn btn-primary btn-xs"><i    class=" glyphicon glyphicon-pencil"></i></button>
                                         <button type="button" onclick="deleteUser(${role.id})" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>
                                     </td>
@@ -226,6 +163,9 @@
 <script >
     function update(id){
         window.location.href="${PATH}/role/update?id="+id;
+    }
+    function toAssign(id){
+        window.location.href="${PATH}/role/assign?id="+id;
     }
     function deleteUser(id){
         layer.confirm("确认删除么",  {icon: 3, title:'删除成功'}, function(cindex){

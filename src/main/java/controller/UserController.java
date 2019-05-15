@@ -18,6 +18,7 @@ import service.UserService;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -126,5 +127,20 @@ public class UserController {
         userService.deleteUserRole(map);
         return JsonData.success();
     }
+    @RequestMapping("/password")
+    public  String toPassword(){
+        return "user/password";
+    }
+    @RequestMapping("/passwordUpdate")
+    @ResponseBody
+    public  JsonData updatePassword(User user){
+        try {
+            userService.updatePassword(user);
+        }catch (Exception e){
+            e.printStackTrace();
+            return JsonData.fail("失败");
 
+        }
+        return JsonData.success();
+    }
 }

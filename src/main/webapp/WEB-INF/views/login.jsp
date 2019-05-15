@@ -42,16 +42,12 @@
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
         </div>
         <div class="form-group has-success has-feedback">
-            <input type="text" class="form-control" id="password" name="password" placeholder="请输入登录密码" style="margin-top:10px;">
+            <input type="password" class="form-control" id="password" name="password" placeholder="请输入登录密码" style="margin-top:10px;">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
 
 
-        <div class="checkbox">
-            <label style="float:right">
-                <a href="reg.html">我要注册</a>
-            </label>
-        </div>
+
         <br>
         <a class="btn btn-lg btn-success btn-block" href="javascript:void(0)" onclick="dologin()" > 登录</a>
     </form>

@@ -1,5 +1,6 @@
 package dao;
 
+import model.Power;
 import model.User;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
@@ -34,4 +35,8 @@ public interface UserMapper {
     void insertUserRole(Map<String, Object> map);
 
     void deleteUserRole(Map<String, Object> map);
+    @Select("SELECT * FROM POWER WHERE id IN (SELECT pid FROM rolepower WHERE rid  IN (SELECT rid FROM  roleuser WHERE uid=#{0}))")
+    List<Power> selectPowerByUserId(Integer id);
+     @Update("update user set password=#{password} ,telephone = #{telephone} where  id =  #{id}")
+    void updatePassword(User user);
 }

@@ -12,6 +12,25 @@
     <!--开启注解-->
     <context:annotation-config/>
     <mvc:annotation-driven/>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <mvc:mapping path="/power/**"/>
+            <mvc:mapping path="/role/**"/>
+            <mvc:mapping path="/main"/>
+            <bean class="common.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <mvc:mapping path="/power/**"/>
+            <mvc:mapping path="/role/**"/>
+            <mvc:mapping path="/main"/>
+            <bean class="common.PowerInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
     <!--配置包扫描器-->
     <context:component-scan base-package="controller"/>
     <context:component-scan base-package="service"/>
@@ -22,6 +41,8 @@
     <mvc:resources location="/css/" mapping="/css/**"/>
     <mvc:resources location="/bootstrap/" mapping="/bootstrap/**"/>
     <mvc:resources location="/script/" mapping="/script/**"/>
+    <mvc:resources location="/ztree/" mapping="/ztree/**"/>
+    <mvc:resources location="/fonts/" mapping="/fonts/**"/>
     <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
     <bean  class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
     <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>

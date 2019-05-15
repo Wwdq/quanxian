@@ -1,6 +1,7 @@
 package service;
 
 import dao.UserMapper;
+import model.Power;
 import model.User;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,5 +56,13 @@ public class UserService {
 
     public void deleteUserRole(Map<String, Object> map) {
         userMapper.deleteUserRole(map);
+    }
+
+    public List<Power> selectPowerByUserId(Integer id) {
+        return userMapper.selectPowerByUserId(id);
+    }
+
+    public void updatePassword(User user) {
+        userMapper.updatePassword(user);
     }
 }

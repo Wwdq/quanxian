@@ -31,4 +31,8 @@ public interface RoleMapper {
     List<Role> selectAll();
     @Select("SELECT rid FROM roleuser WHERE uid=#{0};")
     List<Integer> selectByUserID(int userId);
+
+    void insertRolePower(Map<String, Object> map);
+     @Delete("delete from rolepower where rid=#{0}")
+    void deleteRolePower(Integer rid);
 }
