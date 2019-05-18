@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52a9e13-6864-482a-8e9c-eedb7bd22d0f" name="Default Changelist" comment="&quot;kk&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/quanxian.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/quanxian_war2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/quanxian_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/PowerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/PowerInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/quanxian.war" beforeDir="false" />
-    </list>
+    <list default="true" id="a52a9e13-6864-482a-8e9c-eedb7bd22d0f" name="Default Changelist" comment="&quot;kk&quot;" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/RoleController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="457">
-              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,11 +64,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="22">
+                <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -91,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/common/ParamException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
@@ -148,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/common/MyContextListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TestMapper.xml" />
@@ -199,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/common/PowerInterceptor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -257,40 +251,6 @@
             <path>
               <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
               <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quanxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quanxian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -572,7 +532,7 @@
       <workItem from="1558051911375" duration="3346000" />
       <workItem from="1558065872597" duration="3155000" />
       <workItem from="1558155343016" duration="764000" />
-      <workItem from="1558156534306" duration="1645000" />
+      <workItem from="1558156534306" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;注解&quot;">
       <created>1555592320999</created>
@@ -624,7 +584,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218876000" />
+    <option name="totallyTimeSpent" value="219067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,7 +596,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -650,18 +610,18 @@
       <window_info anchor="bottom" id="Application Servers" order="0" sideWeight="0.49932975" weight="0.32765958" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49865952" visible="true" weight="0.3190883" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865952" weight="0.3190883" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.36312056" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49932975" weight="0.32765958" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49798927" weight="0.27092198" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49798927" visible="true" weight="0.27065527" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020107" side_tool="true" weight="0.32765958" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49798927" weight="0.32765958" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49798927" weight="0.32765958" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" x="22" y="542" width="1492" height="232" id="Version Control" order="14" type="FLOATING" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" x="22" y="542" width="1492" height="232" id="Version Control" order="14" type="FLOATING" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1092,14 +1052,6 @@
     <entry file="file://$PROJECT_DIR$/quanxian.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/JsonData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1110,7 +1062,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1142,6 +1094,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="22">
+            <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
