@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="quanxian:war2">
-    <output-path>$PROJECT_DIR$/out/artifacts/quanxian_war2</output-path>
-    <root id="archive" name="quanxian_war.war">
-      <element id="artifact" artifact-name="quanxian:war exploded" />
-    </root>
-  </artifact>
-</component>

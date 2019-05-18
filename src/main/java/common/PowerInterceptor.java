@@ -23,8 +23,6 @@ public class PowerInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         List<String> list=powerService.selectAllUri();
-
-
         String url=httpServletRequest.getServletPath();
         System.out.println(url);
         HttpSession session=httpServletRequest.getSession();
